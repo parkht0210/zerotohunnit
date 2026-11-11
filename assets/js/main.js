@@ -124,6 +124,41 @@
   bindFilter("#caseFilter", renderCases);
   bindFilter("#lectureFilter", (f) => { lecFilter = f; shown = PAGE; renderHistory(); });
 
+  /* ---------- Reviews ---------- */
+  const REVIEW_PAGE = 6;
+  const reviewsEl = $("#reviews");
+  const reviewMore = $("#reviewMore");
+  let revFilter = "all";
+  let revShown = REVIEW_PAGE;
+  function renderReviews() {
+    const CAT = window.CATEGORIES || {};
+    const list = (window.REVIEWS || []).filter((r) => revFilter === "all" || r.c === revFilter);
+    reviewsEl.innerHTML = list.map((r, i) => `
+      <article class="review"${i >= revShown ? " hidden" : ""}>
+        <div class="review__quote" aria-hidden="true">“</div>
+        <p class="review__hl">${esc(r.hl)}</p>
+        <p class="review__body">${esc(r.body)}</p>
+        <div class="review__foot">
+          <div>
+            <p class="review__who">${esc(r.role)} : ${esc(r.who)}</p>
+            <p class="review__course">${esc(r.org)} · ${esc(r.course)} · ${esc(r.d)}</p>
+          </div>
+          <span class="review__tag">${esc((CAT[r.c] || {}).label || "")}</span>
+        </div>
+      </article>`).join("");
+    reviewMore.hidden = list.length <= REVIEW_PAGE;
+    reviewMore.textContent = revShown >= list.length ? "접기" : `후기 더보기 (${list.length - revShown}개)`;
+  }
+  if (reviewsEl) {
+    renderReviews();
+    reviewMore.addEventListener("click", () => {
+      const total = reviewsEl.children.length;
+      if (revShown >= total) { revShown = REVIEW_PAGE; renderReviews(); $("#review").scrollIntoView(); }
+      else { revShown = total; renderReviews(); }
+    });
+  }
+  bindFilter("#reviewFilter", (f) => { revFilter = f; revShown = REVIEW_PAGE; renderReviews(); });
+
   $$(".ph[data-img]").forEach(loadPh);
 
   /* ---------- Reveal ---------- */

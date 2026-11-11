@@ -265,6 +265,21 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .ph.is-loaded { border-style: solid; border-color: var(--line); }
 .ph.is-loaded::after { content: none; }
 
+/* ---------- Review ---------- */
+.reviews { columns: 3 320px; column-gap: 18px; }
+.review {
+  break-inside: avoid; margin: 0 0 18px; padding: 28px 26px 24px; border-radius: var(--radius);
+  background: var(--card); border: 1px solid var(--line); animation: fade .35s ease;
+}
+.review__quote { font-size: 44px; line-height: .6; color: var(--lime); font-weight: 900; height: 22px; }
+.review__hl { font-size: 18px; font-weight: 700; line-height: 1.45; margin: 10px 0 12px; }
+.review__body { color: var(--muted); font-size: 15px; }
+.review__foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.review__who { font-weight: 700; font-size: 14.5px; }
+.review__course { color: var(--muted); font-size: 13px; margin-top: 2px; }
+.review__tag { flex-shrink: 0; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; background: var(--lime-soft); color: var(--lime); }
+.review[hidden] { display: none; }
+
 /* ---------- Founder ---------- */
 .founder { display: grid; grid-template-columns: 340px 1fr; gap: 56px; align-items: start; }
 .ph--portrait { aspect-ratio: 4 / 5; border-radius: var(--radius); }
