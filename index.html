@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>제로투헌잇 ZERO to HUNNIT · 노션·AI 강의와 업무 시스템 컨설팅</title>
+  <meta name="description" content="제로투헌잇은 노션·AI·브랜딩·창업 강의와 노션 업무 시스템, 회사 홈페이지, 포트폴리오 구축 컨설팅을 진행합니다. 200회 이상 강의, 10,000여 명 교육." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="제로투헌잇 ZERO to HUNNIT" />
+  <meta property="og:description" content="가능성에서 실행으로. 일이 되는 구조를 만듭니다. 노션·AI 강의 · 업무 시스템 컨설팅" />
+  <meta property="og:image" content="assets/img/og-image.jpg" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="제로투헌잇 홈">
+        <!-- 로고 이미지가 준비되면 아래 span을 <img src="assets/img/logo.svg" alt="ZERO to HUNNIT"> 로 교체하세요 -->
+        <span class="logo__mark">0→100</span>
+        <span class="logo__text">ZERO to HUNNIT</span>
+      </a>
+      <nav class="nav__menu" id="navMenu">
+        <a href="#about">소개</a>
+        <a href="#lecture">강의</a>
+        <a href="#consulting">컨설팅</a>
+        <a href="#records">실적</a>
+        <a href="#founder">대표 소개</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn--lime btn--sm nav__cta">프로젝트 문의</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">ZERO to HUNNIT · 제로투헌잇</p>
+        <h1 class="hero__title">
+          가능성에서 실행으로.<br />
+          <span class="hl">일이 되는 구조</span>를 만듭니다.
+        </h1>
+        <p class="hero__lead">
+          흩어진 업무를 연결하는 시스템, 배운 것을 내 일로 만드는 교육.<br class="pc" />
+          노션·AI 강의부터 업무 시스템·홈페이지 구축까지, 당신의 다음 단계를 함께 설계합니다.
+        </p>
+        <div class="hero__cta">
+          <a href="#lecture" class="btn btn--lime">강의 둘러보기</a>
+          <a href="#consulting" class="btn btn--ghost">컨설팅 알아보기</a>
+        </div>
+        <ul class="stats" id="stats"></ul>
+      </div>
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__zero">0</span><span class="hero__arrow">→</span><span class="hero__hundred">100</span>
+      </div>
+    </section>
+
+    <!-- ============ FOR YOU ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__en">FOR YOU</p>
+          <h2 class="sec-head__title">이런 고민, 있으셨죠?</h2>
+        </div>
+        <div class="pain-grid">
+          <article class="pain reveal">
+            <span class="pain__badge">A</span>
+            <p class="pain__who">기관·교육 담당자</p>
+            <h3>"듣고 끝나는 강의 말고,<br />결과물이 남는 교육이 필요해요."</h3>
+          </article>
+          <article class="pain reveal">
+            <span class="pain__badge">B</span>
+            <p class="pain__who">스타트업·중소기업</p>
+            <h3>"노션을 도입했는데,<br />팀이 제대로 쓰질 않아요."</h3>
+          </article>
+          <article class="pain reveal">
+            <span class="pain__badge">C</span>
+            <p class="pain__who">1인 사업자·소상공인</p>
+            <h3>"홈페이지는 필요한데,<br />직접 고칠 수 있었으면 좋겠어요."</h3>
+          </article>
+          <article class="pain reveal">
+            <span class="pain__badge">D</span>
+            <p class="pain__who">청년·취준생·이직 준비</p>
+            <h3>"내 경험을 한눈에 보여줄<br />포트폴리오가 없어요."</h3>
+          </article>
+        </div>
+        <p class="pain__closing">도구를 더하기 전에, <strong>일의 흐름</strong>부터 봅니다.<br />제로투헌잇은 <span class="hl">교육으로 이해하고, 시스템으로 정착시킵니다.</span></p>
+
+        <div class="tracks">
+          <a href="#lecture" class="track reveal">
+            <p class="track__en">EDUCATION</p>
+            <h3 class="track__title">강의 · 워크숍</h3>
+            <p class="track__desc">기관·기업 출강과 맞춤형 워크숍. 4시간 안에 각자의 산출물이 남는 실습형 교육입니다.</p>
+            <ul class="chips"><li>노션</li><li>AI</li><li>브랜딩</li><li>창업</li><li>커리어</li></ul>
+            <span class="track__go">강의 보기 →</span>
+          </a>
+          <a href="#consulting" class="track reveal">
+            <p class="track__en">CONSULTING</p>
+            <h3 class="track__title">구축 · 컨설팅</h3>
+            <p class="track__desc">팀의 일하는 방식에 맞춘 노션 시스템과 직접 수정 가능한 홈페이지·포트폴리오를 만듭니다.</p>
+            <ul class="chips"><li>노션 업무 시스템</li><li>회사 홈페이지</li><li>포트폴리오</li></ul>
+            <span class="track__go">컨설팅 보기 →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LECTURE ============ -->
+    <section class="section section--alt" id="lecture">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__en">LECTURE</p>
+          <h2 class="sec-head__title">강의 카테고리</h2>
+          <p class="sec-head__desc">대상과 활용 수준에 맞춰 커리큘럼 비중을 조정합니다. 모든 과정은 1인 1노트북 실습으로 진행돼요.</p>
+        </div>
+
+        <div class="tabs" role="tablist" aria-label="강의 카테고리">
+          <button class="tab is-active" role="tab" aria-selected="true" data-tab="l-notion">노션</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="l-ai">AI</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="l-branding">브랜딩</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="l-startup">창업</button>
+          <button class="tab" role="tab" aria-selected="false" data-tab="l-career">커리어</button>
+        </div>
+
+        <!-- 노션 -->
+        <div class="panel is-active" id="l-notion" role="tabpanel">
+          <div class="panel__intro">
+            <p class="panel__en">NOTION</p>
+            <h3>흩어진 업무를 하나의 시스템으로</h3>
+            <p>페이지·블록 기본기부터 데이터베이스, 업무 대시보드까지. 강의가 끝나는 시점에 바로 쓰는 나만의 업무 공간이 완성됩니다.</p>
+            <dl class="meta">
+              <div><dt>대상</dt><dd>노션 입문자 · 재직자 · 교직원 · 대학생</dd></div>
+              <div><dt>시간</dt><dd>2시간 특강 ~ 1일 4시간 · 다회차 과정</dd></div>
+              <div><dt>산출물</dt><dd>개인/팀 업무 대시보드</dd></div>
+            </dl>
+          </div>
+          <ol class="curri">
+            <li><span>01</span><div><strong>왜 노션인가</strong><p>업무 정보가 흩어지는 이유, 문서·기록·일정 3분류, 실제 운영 사례 시연</p></div></li>
+            <li><span>02</span><div><strong>기본기 다지기</strong><p>페이지 계층 구조, 필수 블록 15가지, 회의록·보고서 템플릿, 공유와 권한</p></div></li>
+            <li><span>03</span><div><strong>데이터베이스로 업무 구조화</strong><p>표·보드·캘린더 뷰, 속성 설계, 필터·정렬, 관계형으로 프로젝트–할 일 연결</p></div></li>
+            <li><span>04</span><div><strong>나만의 업무 대시보드 완성</strong><p>통합 대시보드 구성, 노션 AI 요약, 버튼 자동화, 반복 업무 템플릿화</p></div></li>
+          </ol>
+          <div class="panel__examples"><p>대표 강의</p><ul><li>노션남매가 알려주는 노션 200% 활용법</li><li>기업 프로젝트 관리를 위한 Notion 활용법</li><li>노션을 활용한 업무 관리 스마트워크</li></ul></div>
+        </div>
+
+        <!-- AI -->
+        <div class="panel" id="l-ai" role="tabpanel" hidden>
+          <div class="panel__intro">
+            <p class="panel__en">AI</p>
+            <h3>생성형 AI를 내 업무 도구로</h3>
+            <p>ChatGPT·Claude·노션 AI를 업무 단계별로 조합하고, 생성 결과를 검증하는 방법까지. 도구 소개가 아니라 실제 업무에 붙여 쓰는 법을 다룹니다.</p>
+            <dl class="meta">
+              <div><dt>대상</dt><dd>재직자 · 공공기관 · 대학 · 마케터 양성과정</dd></div>
+              <div><dt>시간</dt><dd>1일 4시간 · 다회차 과정</dd></div>
+              <div><dt>산출물</dt><dd>업무별 AI 활용 지도 · 자동화 워크플로우</dd></div>
+            </dl>
+          </div>
+          <ol class="curri">
+            <li><span>01</span><div><strong>업무에서 AI가 쓰이는 지점</strong><p>기획·문서·리서치·보고 단계별 활용 지도, 도구 조합, 검증 원칙</p></div></li>
+            <li><span>02</span><div><strong>프롬프트 실습</strong><p>목적별 프롬프트 설계, 톤 고정 프롬프트 저장, 결과물 다듬기</p></div></li>
+            <li><span>03</span><div><strong>AI × 노션 연결</strong><p>회의록 → 할 일 자동 정리, 보고서 초안 생성, 콘텐츠 캘린더 운영</p></div></li>
+            <li><span>04</span><div><strong>나의 자동화 만들기</strong><p>Claude에 노션·캘린더·메일을 연결해 반복 업무를 줄이는 실습</p></div></li>
+          </ol>
+          <div class="panel__examples"><p>대표 강의</p><ul><li>생성형 AI를 활용한 업무 활용 방법</li><li>언론인들을 위한 노션 및 AI 활용법</li><li>AI 기반 디지털 마케터 양성 과정</li></ul></div>
+        </div>
+
+        <!-- 브랜딩 -->
+        <div class="panel" id="l-branding" role="tabpanel" hidden>
+          <div class="panel__intro">
+            <p class="panel__en">BRANDING</p>
+            <h3>막연한 생각을 나만의 브랜드로</h3>
+            <p>강점과 타깃을 정리하고 브랜드의 언어·비주얼·콘텐츠로 옮깁니다. 노션남매와 저스트두잇클럽을 직접 운영하며 쓰는 방법을 그대로 공개해요.</p>
+            <dl class="meta">
+              <div><dt>대상</dt><dd>예비 창업자 · 1인 크리에이터 · 청년</dd></div>
+              <div><dt>시간</dt><dd>2시간 특강 ~ 1일 4시간 워크숍</dd></div>
+              <div><dt>산출물</dt><dd>브랜드 정의서 · 브랜드 웹페이지 · 30일 콘텐츠 계획</dd></div>
+            </dl>
+          </div>
+          <ol class="curri">
+            <li><span>01</span><div><strong>브랜드 전략</strong><p>AI 문답으로 강점·타깃 도출, 미션·슬로건·톤앤매너 정의</p></div></li>
+            <li><span>02</span><div><strong>네이밍·비주얼</strong><p>네이밍 후보 생성과 검증, AI 이미지로 로고·비주얼 시안</p></div></li>
+            <li><span>03</span><div><strong>브랜드 자산 만들기</strong><p>소개문·상세페이지 작성, 노션으로 브랜드 웹페이지 발행</p></div></li>
+            <li><span>04</span><div><strong>콘텐츠 자동화</strong><p>원고 하나를 SNS·블로그로 재가공하는 파이프라인, 30일 실행 로드맵</p></div></li>
+          </ol>
+          <div class="panel__examples"><p>대표 강의</p><ul><li>생성형 AI를 활용한 브랜드 구축과 운영</li><li>노션을 활용한 퍼스널 브랜딩</li><li>노션남매 브랜드 스토리 특강</li></ul></div>
+        </div>
+
+        <!-- 창업 -->
+        <div class="panel" id="l-startup" role="tabpanel" hidden>
+          <div class="panel__intro">
+            <p class="panel__en">STARTUP</p>
+            <h3>사업 운영을 가볍게, 체계적으로</h3>
+            <p>사업계획서·제안서 초안 작성부터 일정·예산·보고를 관리하는 운영 체계까지. 1인 사업자가 직접 해보며 만든 시스템을 나눕니다.</p>
+            <dl class="meta">
+              <div><dt>대상</dt><dd>예비·초기 창업자 · 여성 창업가 · 창업지원 기관</dd></div>
+              <div><dt>시간</dt><dd>1일 4시간 · 다회차 과정</dd></div>
+              <div><dt>산출물</dt><dd>사업계획서 초안 · 사업 운영 대시보드</dd></div>
+            </dl>
+          </div>
+          <ol class="curri">
+            <li><span>01</span><div><strong>사업제안서 작성</strong><p>문제–솔루션–시장–실행–팀 구성, AI 리서치로 근거 확보</p></div></li>
+            <li><span>02</span><div><strong>지원사업 대응</strong><p>PSST 등 양식 해석, 평가지표를 반영한 초안, AI 심사위원 피드백</p></div></li>
+            <li><span>03</span><div><strong>운영 관리 체계</strong><p>노션 프로젝트 DB(일정·담당·산출물), 고객·매출 기록</p></div></li>
+            <li><span>04</span><div><strong>노션으로 수익화</strong><p>템플릿·디지털 콘텐츠로 부수입을 만드는 구조 설계</p></div></li>
+          </ol>
+          <div class="panel__examples"><p>대표 강의</p><ul><li>AI와 노션으로 만드는 스마트 창업 운영 시스템</li><li>여성 창업가를 위한 노션 활용법</li><li>노션으로 제2의 월급 만들기</li></ul></div>
+        </div>
+
+        <!-- 커리어 -->
+        <div class="panel" id="l-career" role="tabpanel" hidden>
+          <div class="panel__intro">
+            <p class="panel__en">CAREER</p>
+            <h3>내 경험을 보여주는 포트폴리오</h3>
+            <p>경험을 정리하고 직무에 맞는 노션 포트폴리오로 완성합니다. 국제개발협력 7년, 브랜드 운영 경험을 바탕으로 커리어 방향도 함께 고민해요.</p>
+            <dl class="meta">
+              <div><dt>대상</dt><dd>대학생 · 취준생 · 경력 전환 청년 · 해외봉사 단원</dd></div>
+              <div><dt>시간</dt><dd>2시간 특강 ~ 4회차 과정</dd></div>
+              <div><dt>산출물</dt><dd>노션 포트폴리오 · 90일 실행 계획</dd></div>
+            </dl>
+          </div>
+          <ol class="curri">
+            <li><span>01</span><div><strong>경험 정리</strong><p>가치관·역량 진단 워크시트로 나의 강점과 방향 찾기</p></div></li>
+            <li><span>02</span><div><strong>포트폴리오 구조 잡기</strong><p>직무별 포트폴리오 템플릿, 프로젝트를 눈에 띄게 쓰는 법</p></div></li>
+            <li><span>03</span><div><strong>직접 만들기</strong><p>템플릿 복제 후 내 내용으로 완성, 링크 공유·PDF 변환</p></div></li>
+            <li><span>04</span><div><strong>피드백과 다음 단계</strong><p>상호 피드백, 90일 실행 계획 세우기</p></div></li>
+          </ol>
+          <div class="panel__examples"><p>대표 강의</p><ul><li>노션으로 나만의 포트폴리오 만들기</li><li>청년카페 취트키 &lt;퍼스널로그&gt;</li><li>개발자를 위한 노션 포트폴리오 A to Z</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONSULTING ============ -->
+    <section class="section" id="consulting">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__en">CONSULTING</p>
+          <h2 class="sec-head__title">컨설팅 카테고리</h2>
+          <p class="sec-head__desc">멋진 결과물보다, <strong>계속 쓰이는 결과물</strong>을 지향합니다. 구축 후 직접 수정·운영할 수 있도록 가이드까지 전달해요.</p>
+        </div>
+
+        <div class="svc-grid">
+          <article class="svc reveal">
+            <p class="svc__num">01</p>
+            <h3>노션 업무 시스템</h3>
+            <p class="svc__q">업무가 흩어져 있거나, 도구를 도입했지만 잘 활용하지 못하고 있나요?</p>
+            <p>조직의 일하는 방식에 맞춰 프로젝트·문서·일정이 연결되는 노션 시스템을 설계하고, 구성원 활용 교육까지 연결합니다.</p>
+            <ul class="check">
+              <li>조직 맞춤형 워크플로우·데이터베이스 설계</li>
+              <li>프로젝트·회의록·일정 통합 대시보드</li>
+              <li>Notion·Slack 등 SaaS 업무 환경 구축</li>
+              <li>구성원 대상 활용 교육 · 운영 가이드</li>
+            </ul>
+            <p class="svc__for">추천 · 스타트업, 중소기업, 공공기관 사업팀</p>
+          </article>
+          <article class="svc reveal">
+            <p class="svc__num">02</p>
+            <h3>회사 홈페이지</h3>
+            <p class="svc__q">홈페이지가 필요하지만, 매번 외주에 맡기지 않고 직접 고치고 싶나요?</p>
+            <p>노션 또는 HTML 정적 사이트로 브랜드 홈페이지를 만듭니다. 구성 기획부터 게시·도메인 연결, 편집 가이드까지 포함해요.</p>
+            <ul class="check">
+              <li>구성 기획 · 원고 정리 · 디자인</li>
+              <li>노션 사이트 / OOPY / GitHub Pages 게시</li>
+              <li>모바일 점검 · 도메인 연결 설정</li>
+              <li>직접 수정할 수 있는 편집 가이드 · 화상 인계</li>
+            </ul>
+            <p class="svc__for">추천 · 1인 사업자, 소상공인, 커뮤니티·단체</p>
+          </article>
+          <article class="svc reveal">
+            <p class="svc__num">03</p>
+            <h3>포트폴리오</h3>
+            <p class="svc__q">내 경력과 프로젝트를 한 페이지로 보여주고 싶나요?</p>
+            <p>개인·강사·프리랜서·팀의 경험을 정리해 노션 포트폴리오로 완성합니다. 강의 제안이나 채용 지원에 바로 쓸 수 있는 형태로 만들어요.</p>
+            <ul class="check">
+              <li>경력·프로젝트 인터뷰와 구조화</li>
+              <li>직무·목적별 포트폴리오 구성</li>
+              <li>강사 소개 · 강의 이력 페이지</li>
+              <li>PDF 변환 · 링크 공유 세팅</li>
+            </ul>
+            <p class="svc__for">추천 · 프리랜서 강사, 취업·이직 준비, 팀 소개</p>
+          </article>
+        </div>
+
+        <div class="process">
+          <h3 class="process__title">진행 과정</h3>
+          <ol class="process__list">
+            <li class="reveal"><span>STEP 1</span><strong>문제와 목표 정리</strong><p>대상, 현재 방식, 해결할 문제를 함께 확인합니다.</p></li>
+            <li class="reveal"><span>STEP 2</span><strong>맞는 구조 설계</strong><p>교육·시스템·콘텐츠 중 필요한 조합과 범위를 정합니다.</p></li>
+            <li class="reveal"><span>STEP 3</span><strong>직접 만들고 적용</strong><p>실무에 적용할 수 있는 결과물로 구체화합니다.</p></li>
+            <li class="reveal"><span>STEP 4</span><strong>사용하며 보완</strong><p>활용 과정의 피드백을 반영합니다. 후속 지원 범위는 협의해요.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECORDS ============ -->
+    <section class="section section--alt" id="records">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__en">RECORDS</p>
+          <h2 class="sec-head__title">그동안의 실적</h2>
+          <p class="sec-head__desc">2021년부터 대학·공공기관·기업 현장에서 쌓아온 기록입니다.</p>
+        </div>
+
+        <div class="orgs" id="orgs" aria-label="주요 출강 기관"></div>
+
+        <!-- 컨설팅 실적 -->
+        <h3 class="sub-title">컨설팅 · 구축 사례</h3>
+        <div class="filter" id="caseFilter">
+          <button class="chip-btn is-active" data-filter="all">전체</button>
+          <button class="chip-btn" data-filter="system">노션 업무 시스템</button>
+          <button class="chip-btn" data-filter="homepage">회사 홈페이지</button>
+          <button class="chip-btn" data-filter="portfolio">포트폴리오</button>
+        </div>
+        <div class="cases" id="cases"></div>
+
+        <!-- 강의 실적 -->
+        <h3 class="sub-title">강의 이력 <small id="lectureCount"></small></h3>
+        <div class="filter" id="lectureFilter">
+          <button class="chip-btn is-active" data-filter="all">전체</button>
+          <button class="chip-btn" data-filter="notion">노션</button>
+          <button class="chip-btn" data-filter="ai">AI</button>
+          <button class="chip-btn" data-filter="branding">브랜딩</button>
+          <button class="chip-btn" data-filter="startup">창업</button>
+          <button class="chip-btn" data-filter="career">커리어</button>
+        </div>
+        <ul class="history" id="history"></ul>
+        <div class="history__more">
+          <button class="btn btn--ghost" id="historyMore">더보기</button>
+        </div>
+
+        <!-- 현장 사진 -->
+        <h3 class="sub-title">강의 현장</h3>
+        <div class="gallery">
+          <figure><div class="ph" data-img="assets/img/lecture-01.jpg"></div><figcaption>국립부경대학교 · 생성형 AI 업무 활용</figcaption></figure>
+          <figure><div class="ph" data-img="assets/img/lecture-02.jpg"></div><figcaption>대구광역시청년센터 · 퍼스널로그</figcaption></figure>
+          <figure><div class="ph" data-img="assets/img/lecture-03.jpg"></div><figcaption>부산디자인진흥원 · 노션 스마트워크</figcaption></figure>
+          <figure><div class="ph" data-img="assets/img/lecture-04.jpg"></div><figcaption>한국언론진흥재단 · 노션 및 AI 활용</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOUNDER ============ -->
+    <section class="section" id="founder">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__en">FOUNDER</p>
+          <h2 class="sec-head__title">대표 소개</h2>
+        </div>
+        <div class="founder">
+          <div class="founder__photo">
+            <div class="ph ph--portrait" data-img="assets/img/profile.jpg"></div>
+            <ul class="links">
+              <li><a href="mailto:parkht0210@gmail.com">Email</a></li>
+              <li><a href="https://www.instagram.com/hunt.record/" target="_blank" rel="noopener">@hunt.record</a></li>
+              <li><a href="https://www.instagram.com/notion_nammae/" target="_blank" rel="noopener">@notion_nammae</a></li>
+            </ul>
+          </div>
+          <div class="founder__body">
+            <h3 class="founder__title">복잡한 문제를 이해하기 쉬운 구조로,<br />좋은 생각을 실제 실행으로 옮기는 <span class="hl">헌트, 박현태</span>입니다.</h3>
+            <p>국제개발협력(ODA) 분야에서 7년간 사업 기획·운영을 해왔고, 노션남매와 저스트두잇클럽을 운영하며 교육·브랜딩·시스템 구축 경험을 쌓았습니다. 그 경험을 연결해 2026년 제로투헌잇을 시작했습니다.</p>
+
+            <div class="founder__cols">
+              <div>
+                <h4>주요 경력</h4>
+                <ul class="timeline">
+                  <li><b>2026.04–</b>제로투헌잇 대표</li>
+                  <li><b>2022.10–</b>노션 글로벌 앰버서더 · 노션남매 대표</li>
+                  <li><b>2024.08–</b>저스트두잇클럽 대표</li>
+                  <li><b>2021.10–2024.06</b>사이드 프로젝트 커뮤니티 힐링가라지 대표</li>
+                  <li><b>2018.08–2020.08</b>한국국제협력단(KOICA) 동티모르 사무소</li>
+                  <li><b>2016.02–2018.02</b>지구촌나눔운동 동티모르 사무소</li>
+                </ul>
+              </div>
+              <div>
+                <h4>자격</h4>
+                <ul class="timeline">
+                  <li><b>2025</b>Notion Certified Essentials · Workflows · Advanced</li>
+                  <li><b>2019</b>PRINCE2 Foundation &amp; Practitioner</li>
+                </ul>
+                <h4>운영 브랜드</h4>
+                <div class="brands">
+                  <a href="https://www.instagram.com/notion_nammae/" target="_blank" rel="noopener" class="brand">
+                    <strong>노션남매</strong><span>노션 교육·커뮤니티</span>
+                  </a>
+                  <a href="https://www.instagram.com/justdoitclub.official/" target="_blank" rel="noopener" class="brand">
+                    <strong>저스트두잇클럽</strong><span>브랜딩·커뮤니티</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section--alt" id="faq">
+      <div class="container container--narrow">
+        <div class="sec-head">
+          <p class="sec-head__en">FAQ</p>
+          <h2 class="sec-head__title">시작 전에 궁금한 것들</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>어떤 서비스가 필요한지 아직 명확하지 않아요.</summary>
+            <p>현재의 어려움과 바꾸고 싶은 모습을 알려주세요. 교육이 먼저 필요한지, 업무 구조를 바꿔야 할지, 홈페이지가 필요한지 함께 정리할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary>노션이나 AI를 처음 접하는 팀도 가능한가요?</summary>
+            <p>네. 50대 자영업자부터 대학생까지 다양한 수준의 수강생과 함께해 왔어요. 문의 시 팀 규모와 도구 사용 경험을 알려주시면 맞춰서 제안드립니다.</p>
+          </details>
+          <details>
+            <summary>비용과 기간은 어떻게 정하나요?</summary>
+            <p>교육 인원·시간, 시스템 구축 범위, 홈페이지 분량에 따라 달라집니다. 목표, 희망 일정, 예산 범위를 알려주시면 협의 후 견적과 일정을 안내드려요. 전자세금계산서 발행이 가능합니다.</p>
+          </details>
+          <details>
+            <summary>만든 홈페이지나 시스템은 제가 직접 수정할 수 있나요?</summary>
+            <p>네, 직접 수정·운영할 수 있는 형태로 만드는 것이 원칙입니다. 완성 후 편집 가이드와 화상 인계를 함께 진행합니다.</p>
+          </details>
+          <details>
+            <summary>지방이나 온라인 강의도 가능한가요?</summary>
+            <p>부산을 기반으로 서울·제주·대구 등 전국 출강을 진행하고 있으며, 온라인(Zoom 등) 강의도 가능합니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="sec-head">
+          <p class="sec-head__en">CONTACT</p>
+          <h2 class="sec-head__title">당신의 다음 단계, 함께 만들어볼까요?</h2>
+          <p class="sec-head__desc">아직 정리되지 않은 생각이어도 괜찮아요. 지금 필요한 변화를 들려주세요.</p>
+        </div>
+
+        <div class="contact">
+          <aside class="contact__info">
+            <div class="contact__card">
+              <p class="contact__label">강의 · 워크숍</p>
+              <p>노션 · AI · 브랜딩 · 창업 · 커리어</p>
+            </div>
+            <div class="contact__card">
+              <p class="contact__label">구축 · 컨설팅</p>
+              <p>노션 업무 시스템 · 회사 홈페이지 · 포트폴리오</p>
+            </div>
+            <div class="contact__card contact__card--lime">
+              <p class="contact__label">이메일로 바로 문의</p>
+              <a href="mailto:parkht0210@gmail.com?subject=%5B%EC%A0%9C%EB%A1%9C%ED%88%AC%ED%97%8C%EC%9E%87%20%EB%AC%B8%EC%9D%98%5D">parkht0210@gmail.com</a>
+            </div>
+          </aside>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <label>이름 <em>*</em><input type="text" name="name" required placeholder="홍길동" /></label>
+              <label>소속<input type="text" name="org" placeholder="기관 · 회사명" /></label>
+            </div>
+            <div class="form__row">
+              <label>이메일 <em>*</em><input type="email" name="email" required placeholder="you@example.com" /></label>
+              <label>연락처<input type="tel" name="phone" placeholder="010-0000-0000" /></label>
+            </div>
+            <label>문의 분야 <em>*</em>
+              <select name="category" required>
+                <option value="">선택해 주세요</option>
+                <optgroup label="강의 · 워크숍">
+                  <option>강의 - 노션</option>
+                  <option>강의 - AI</option>
+                  <option>강의 - 브랜딩</option>
+                  <option>강의 - 창업</option>
+                  <option>강의 - 커리어</option>
+                </optgroup>
+                <optgroup label="구축 · 컨설팅">
+                  <option>컨설팅 - 노션 업무 시스템</option>
+                  <option>컨설팅 - 회사 홈페이지</option>
+                  <option>컨설팅 - 포트폴리오</option>
+                </optgroup>
+                <option>아직 미정</option>
+              </select>
+            </label>
+            <div class="form__row">
+              <label>희망 일정<input type="text" name="schedule" placeholder="예: 12월 중 / 2027년 상반기" /></label>
+              <label>예상 인원 · 대상<input type="text" name="target" placeholder="예: 재직자 20명" /></label>
+            </div>
+            <label>예산 범위<input type="text" name="budget" placeholder="선택 사항" /></label>
+            <label>문의 내용 <em>*</em>
+              <textarea name="message" rows="5" required placeholder="현재의 어려움과 원하는 결과를 자유롭게 적어주세요."></textarea>
+            </label>
+            <label class="form__agree">
+              <input type="checkbox" name="agree" required />
+              <span>문의 회신을 위한 개인정보(이름, 소속, 이메일, 연락처) 수집·이용에 동의합니다. 수집된 정보는 상담 목적으로만 사용되며 상담 종료 후 파기됩니다.</span>
+            </label>
+            <button type="submit" class="btn btn--lime btn--block">문의 보내기</button>
+            <p class="form__msg" id="formMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__logo">ZERO to HUNNIT</p>
+        <p class="footer__info">제로투헌잇 · 대표 박현태<br />parkht0210@gmail.com</p>
+        <!-- 사업자등록번호를 표기하려면 아래 주석을 해제하세요 -->
+        <!-- <p class="footer__info">사업자등록번호 000-00-00000</p> -->
+      </div>
+      <nav class="footer__nav">
+        <a href="#about">소개</a><a href="#lecture">강의</a><a href="#consulting">컨설팅</a>
+        <a href="#records">실적</a><a href="#founder">대표 소개</a><a href="#contact">문의</a>
+      </nav>
+      <div class="footer__sns">
+        <a href="https://www.instagram.com/hunt.record/" target="_blank" rel="noopener">헌트레코드 ↗</a>
+        <a href="https://www.instagram.com/notion_nammae/" target="_blank" rel="noopener">노션남매 ↗</a>
+        <a href="https://www.instagram.com/justdoitclub.official/" target="_blank" rel="noopener">저스트두잇클럽 ↗</a>
+      </div>
+    </div>
+    <p class="footer__copy">© 2026 ZERO to HUNNIT. All rights reserved.</p>
+  </footer>
+
+  <a href="#top" class="to-top" aria-label="맨 위로">↑</a>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
